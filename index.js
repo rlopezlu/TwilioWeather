@@ -17,7 +17,7 @@ app.get('/test', function(req, res){
     res.send('hello from heroku');
 });
 
-app.get('/test', function(req, res){
+app.get('/', function(req, res){
     res.send('Welcome from heroku');
 });
 
