@@ -13,6 +13,10 @@ var myTwilioNumber = process.env.TWILIO_NUMBER;
 var app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.get('/test', function(req, res){
+    res.send('hello from heroku');
+});
+
 app.post('/sms', function(req, res) {
   var twilio = require('twilio');
   console.log('received a text message');
