@@ -80,6 +80,8 @@ app.get('/reply', function(req, res){
 });
 });
 
-app.listen(3000, function(){
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function(){
     console.log('app running on port 3000');
 });
