@@ -6,9 +6,9 @@ var client = require('twilio')
     "f4fe75ba303dff1eac35e7ab7516ed83");
 var request = require('request');
 
-var myTwilioAccount = process.env.TWILIO_ACCOUNT_SID;
-var myTwilioAuthToken = process.env.TWILIO_AUTH_TOKEN;
-var myTwilioNumber = process.env.TWILIO_NUMBER;
+// var myTwilioAccount = process.env.TWILIO_ACCOUNT_SID;
+// var myTwilioAuthToken = process.env.TWILIO_AUTH_TOKEN;
+// var myTwilioNumber = process.env.TWILIO_NUMBER;
 
 var app = express();
 app.use(bodyParser.urlencoded({extended: true}));
